@@ -1,0 +1,81 @@
+# SAQIB ALI 
+# Roll Number 86
+# LAB 5
+
+# Q1
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+program = input("Enter your program: ")
+marks = float(input("Enter your marks: "))
+
+student = (name, age, program, marks)
+
+print(student)
+
+
+# Q2
+
+sentence = input("Enter a sentence: ")
+
+characters = len(sentence)
+words = len(sentence.split())
+
+vowels = 0
+spaces = 0
+digits = 0
+
+for char in sentence:
+
+    if char.lower() in "aeiou":
+        vowels = vowels + 1
+
+    if char == " ":
+        spaces = spaces + 1
+
+    if char.isdigit():
+        digits = digits + 1
+
+print("Number of characters:", characters)
+print("Number of words:", words)
+print("Number of vowels:", vowels)
+print("Number of spaces:", spaces)
+print("Number of digits:", digits)
+
+
+# Q3
+
+employees = []
+
+for i in range(3):
+
+    name = input("Enter employee name: ")
+    age = int(input("Enter employee age: "))
+    salary = float(input("Enter employee salary: "))
+
+    employee = (name, age, salary)
+
+    employees.append(employee)
+
+print("\nEmployees:")
+
+for employee in employees:
+    print(employee)
+
+
+# Q4
+
+numbers = (10, 15, 20, 25, 30, 35, 40)
+
+even = 0
+odd = 0
+
+for number in numbers:
+
+    if number % 2 == 0:
+        even = even + 1
+    else:
+        odd = odd + 1
+
+print("Even numbers:", even)
+print("Odd numbers:", odd)
